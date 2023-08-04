@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500;700&display=swap');
+.contact-main{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem;
+    margin-top: 2rem;
+}
+.contact-main-text{
+    display: flex;
+    flex-direction: column;
+    width: 50ch;
+    font-family: 'Montserrat', sans-serif;
+    gap: 1rem;
+    line-height: 1.6rem
+}
+.registration_form_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #1f688c;
+
+}
+.registration_form_contact input{
+    width: 35vw;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1rem;
+}
+.registration_form_contact button{
+    background-color: transparent;
+    border: 1px solid rgb(211, 211, 211);
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.submitbtn{
+    background-color: transparent; border: 1px solid white; color: white;
+
+}
+
+@media screen and (max-width:991px){
+    .contact-main{
+        flex-direction: column;
+        
+      
+    }
+    .ekodus-map{
+        width: 90vw!important;
+    }
+    .contact-main-text{
+        width: 100%;
+
+        }
+}
+@media screen and (max-width:576px){
+    .contact-main{
+        margin-inline: 1rem;
+       
+      
+    }
+    .registration_form_contact input{
+        width: 100%;
+    }
+}

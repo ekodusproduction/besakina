@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@400;500;700&display=swap');
+
+.about_container{
+    margin-block: 4rem;
+}
+
+.about_container h2{
+    text-align: center;
+    font-weight: 700;
+}
+.aboutus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+   
+}
+.about_image img{
+    width: 40vw;
+    border-radius: 10px;
+}
+.about_text{
+    text-align: justify;
+    width: 40vw;
+    font-size: 1.2rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+    color: black;
+}
+.small_logo{
+    position: absolute;
+    width: 15vw;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    /* transform: rotate(45deg); */
+    opacity: 0.1;
+}
+
+
+.tag_strip{
+    /* background-color: #145366; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    margin: 5rem;
+}
+.tag_strip_text_container{
+    /* background: linear-gradient(#fffffff1,#fffffff3), url(../../assets/small_logo.png); */
+    background-size: cover;
+    padding: 1rem;
+
+}
+.tag_strip_text{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+   
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.tag_strip_text h3{
+    margin-bottom: 10px;
+}
+.tag_strip_text_container img{
+    width: 350px;
+}
+.registration_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #1f688c;
+    
+}
+.registration_form h2{
+    color: white;
+}
+.registration_form input{
+    width: 35vw;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 1rem;
+}
+.registration_form textarea{
+    width: 100%;
+}
+.registration_form button{
+    background-color: transparent;
+    border: 1px solid rgb(211, 211, 211);
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.inquiryFormError{
+    color: white;
+    margin-top: 10px;
+}
+.tag_strip_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    margin-inline: 1rem;
+}
+.tag_strip_text_container i{
+    font-size:3rem ;
+    margin-top: 1rem;
+}
+
+#submitbtn{
+    background-color: transparent; border: 1px solid white; color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.contact_container{
+    margin-block: 4rem;
+}
+.contact_container h2{
+    text-align: center;
+    font-weight: 700;
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.contact{
+    /* box-shadow: 0 2px 6px 2px #3d3d3d93; */
+    height: 150px;
+    width: 250px;
+    /* border-radius: 50%; */
+    /* background: linear-gradient(to right, #145366,#1f688c) ;
+    color: white; */
+    padding-top: 1.4rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.contact h5{
+    font-size: 1.3rem;
+    color: #1f688c;
+}
+.contact p{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 992px){
+    .aboutus{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .about_image{
+        width: 70%;
+    }
+    .about_image img{
+        width: 100%;
+        border-radius: 10px;
+        margin: auto;
+
+    }
+    .about_text{
+        text-align: justify;
+        width: 70%;
+    }
+    .tag_strip{
+        flex-direction: column;
+    }
+    .registration_form input{
+        width: 100%;
+    }
+    .registration_form{
+        width: 70%;
+    }
+    .tag_strip_text_container{
+        background: white;
+    }
+    .tag_strip{
+        margin: 10px;
+    }
+    .contacts{
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 1rem;
+    }
+}
+@media screen and (max-width: 756x){
+    .aboutus{
+        margin: 10px;
+    }
+    .about_image{
+        width: 90%;
+    }
+   
+    .about_text{
+        text-align: justify;
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .about_image{
+        width: 100%;
+    }
+   
+    .about_text{
+        text-align: justify;
+        width: 95%;
+    }
+    .registration_form{
+        width: 99%;
+    }
+    .tag_strip_text_container{
+        width: 95%;
+    }
+    .tag_strip_text_container img{
+        width: 300px;
+    }
+    
+
+}
